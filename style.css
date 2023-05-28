@@ -1,0 +1,29 @@
+/* Variables, Inicializaciones y Reseteo de Estilos */
+:root {
+	/* Colors */
+	--dark: #232830;
+	--black: #000000;
+	--white: #FFFFFF;
+	--hospital-green: #ACD9B2;
+	--very-light-pink: #C7C7C7;
+	--text-input-field: #F7F7F7;
+
+	/* Font Sizes */
+	--small: 14px;
+	--medium: 16px;
+	--large: 18px;
+}
+
+* {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+
+html {
+	font-size: 62.5%;
+}
+
+body {
+	font-family: "Quicksand", sans-serif;
+}
