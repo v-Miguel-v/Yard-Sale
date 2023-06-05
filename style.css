@@ -10,7 +10,7 @@
 	--text-input-field: #F7F7F7;
 
 	/* Font Sizes */
-	--icon-sizemall: 14px;
+	--small: 14px;
 	--medium: 15px;
 	--large: 18px;
 }
@@ -24,6 +24,7 @@
 html {
 	font-size: 62.5%;
 }
+/* Recuerda acomodar las variables de los tamaños de los font sizes para que estén en medidas rem */
 
 body {
 	font-family: "Quicksand", sans-serif;
@@ -45,9 +46,10 @@ body {
 }
 
 .header__side-button {
-	width: 25px;
-	height: 25px;
-	background-size: 25px 25px;
+	--button-size: 25px;
+	width: var(--button-size);
+	height: var(--button-size);
+	background-size: var(--button-size) var(--button-size);
 }
 
 .header__side-button--menu {
@@ -61,7 +63,7 @@ body {
 /** Search & Nav Bar **/
 
 .search-bar {
-	margin: 10px 15px 10px;
+	margin: 10px 15px;
 	padding: 8px 10px;
 	display: grid;
 	grid-template-columns: auto 1fr;
@@ -91,4 +93,40 @@ body {
 	height: var(--icon-size);
 	width: var(--icon-size);
 	margin-right: 6px;
+}
+
+.nav-bar {
+	display: flex;
+	align-items: center;
+	margin: 13px 0px;
+	padding-top: 1px;
+	padding-bottom: 5px;
+	font-size: var(--medium);
+	overflow-x: scroll;
+	scroll-behavior: smooth;
+	overscroll-behavior-x: contain;
+	scroll-snap-type: x mandatory;
+	scrollbar-color: transparent transparent;
+}
+
+.nav-bar__link {
+	margin: 0 10px;
+	padding: 3px 9px;
+	text-decoration: none;
+	color: var(--very-light-pink);
+	scroll-snap-align: center;
+}
+
+.nav-bar__link--active {
+	border-radius: 6px;
+	color: var(--hospital-green);
+	outline: 1px solid var(--hospital-green);
+}
+
+.nav-bar__link:nth-child(1) {
+	margin-left: 20px;
+}
+
+.nav-bar__link:nth-last-child(1) {
+	margin-right: 20px;
 }
