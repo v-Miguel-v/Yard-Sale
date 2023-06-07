@@ -54,11 +54,11 @@ body {
 }
 
 .header__side-button--menu {
-	background-image: url("/assets/icons/menu.svg");
+	background-image: url("assets/icons/menu.svg");
 }
 
 .header__side-button--cart {
-	background-image: url("assets/icons/shopping_cart.svg");
+	background-image: url("assets/icons/shopping-cart.svg");
 }
 
 /** Main **/
@@ -96,7 +96,7 @@ body {
 
 .search-bar__icon {
 	--icon-size: 19px;
-	background-image: url("/assets/icons/search.svg");
+	background-image: url("assets/icons/search.svg");
 	background-size: var(--icon-size) var(--icon-size);
 	height: var(--icon-size);
 	width: var(--icon-size);
@@ -113,7 +113,7 @@ body {
 	scroll-behavior: smooth;
 	overscroll-behavior-x: contain;
 	scroll-snap-type: x mandatory;
-	scrollbar-color: transparent transparent;
+	scrollbar-width: none;
 }
 
 .nav-bar__link {
@@ -158,7 +158,7 @@ body {
 	width: var(--arrow-size);
 	height: var(--arrow-size);
 	background-size: var(--arrow-size) var(--arrow-size);
-	background-image: url("/assets/icons/black-arrow.svg");
+	background-image: url("assets/icons/black-arrow.svg");
 	transform: rotate(90deg);
 }
 
@@ -202,7 +202,7 @@ body {
 	width: var(--button-size);
 	height: var(--button-size);
 	background-size: var(--button-size) var(--button-size);
-	background-image: url("/assets/icons/add_to_cart.svg");
+	background-image: url("assets/icons/add-to-cart.svg");
 	border-radius: 100%;
 	box-shadow: 0px 0px 2px 2px rgba(170, 160, 160, 0.185);
 }

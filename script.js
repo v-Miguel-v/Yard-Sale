@@ -13,7 +13,7 @@ function toggleActiveEffectForNavLinks (event) {
 		if (!clickedTarget.classList.contains(ACTIVE)) {
 			activeElement.classList.remove(ACTIVE);
 			clickedTarget.classList.add(ACTIVE);
-			clickedTarget.scrollIntoView();
+			clickedTarget.scrollIntoView({ behavior: "smooth" });
 		}
 	}
 }
