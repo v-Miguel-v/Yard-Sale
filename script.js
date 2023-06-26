@@ -5,6 +5,7 @@ const navbar = document.querySelector(".nav-bar");
 //* Toggle Effect for Nav Links
 navbar.addEventListener("click", toggleActiveEffectForNavLinks);
 function toggleActiveEffectForNavLinks (event) {
+	event.preventDefault();
 	const LINK = "nav-bar__link";
 	const ACTIVE = "nav-bar__link--active";
 	const clickedTarget = event.target;
@@ -13,7 +14,7 @@ function toggleActiveEffectForNavLinks (event) {
 		if (!clickedTarget.classList.contains(ACTIVE)) {
 			activeElement.classList.remove(ACTIVE);
 			clickedTarget.classList.add(ACTIVE);
-			clickedTarget.scrollIntoView({ behavior: "smooth" });
+			clickedTarget.scrollIntoView({ behavior: "smooth", inline: "center", block: "end" });
 		}
 	}
 }
